@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                                     <Link href="#passions" onClick={handleLinkClick}>Passion</Link>
                                 </li>
                                 <li className={styles.navItem}>
-                                    <Link href="#contact" onClick={handleLinkClick}>Contact</Link>
+                                    <Link href="#contact" onClick={handleLinkClick}>Contact  </Link>
                                 </li>
                             </ul>
                         </div>
