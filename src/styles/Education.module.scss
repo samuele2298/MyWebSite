@@ -1,0 +1,274 @@
+@import 'constants';
+
+.education {
+    position: relative;
+    padding: 7vh 5vw;
+    height: 90vh;
+    background-image: url('/image/education_background.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    z-index: 0;
+    margin: 0;
+}
+
+.education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.education>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.title {
+    text-align: left;
+    margin: 0;
+}
+
+
+.title h2 {
+    font-size: 6vh;
+    color: $color-primary;
+    margin: 0;
+}
+
+.title h4 {
+    font-size: 3vh;
+    color: $color-text-white;
+    margin: 0;
+}
+
+
+
+
+.cards {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card {
+    width: 25vw;
+    height: 50vh;
+    margin: 0;
+}
+
+.card h2 {
+    position: relative;
+    font-size: 4vh;
+    color: $color-text-white;
+    z-index: 6;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+.card h4 {
+    position: relative;
+    font-size: 2vh;
+    color: $color-text-white;
+    z-index: 6;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+.card p {
+    position: relative;
+    font-size: 2vh;
+    color: $color-text-white;
+    z-index: 6;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+
+
+.university_card {
+    position: relative;
+    padding: 3vh 3vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/university.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    margin: 0;
+}
+
+.university_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+.aloud_card {
+    position: relative;
+    padding: 3vh 3vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/aloud.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    margin: 0;
+}
+
+.aloud_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+
+.luosi_card {
+    position: relative;
+    padding: 3vh 3vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/luosi.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    margin: 0;
+}
+
+.luosi_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+
+/* Mobile-specific styles */
+@media screen and (max-width: $mobile-width) {
+    .education {
+        padding: 7vw 2vh;
+        height: 150vh;
+    }
+
+
+    .title h2 {
+        font-size: 4vh;
+    }
+
+    .title h4 {
+        font-size: 2.5vh;
+    }
+
+
+    .cards {
+
+        margin-top: 5vh;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 3vh;
+
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .card h2 {
+        font-size: 4vh;
+        margin-top: 1vh;
+    }
+
+    .card h4 {
+        font-size: 2vh;
+        margin-top: 1vh;
+
+    }
+
+    .card p {
+        font-size: 1.7vh;
+        margin-top: 1vh;
+    }
+
+
+
+    .colomn_card {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .university_card {
+        padding: 3vh 3vh;
+        width: 80vw;
+        height: 40vh;
+    }
+
+
+    .aloud_card {
+        padding: 3vh 3vh;
+
+    }
+
+    .luosi_card {
+        padding: 3vh 3vh;
+
+    }
+
+
+
+
+}

@@ -1,0 +1,271 @@
+@import 'constants';
+
+.passions {
+    position: relative;
+    padding: 7vh 5vw;
+    height: 100vh;
+    background-image: url('/image/passion_background.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    z-index: 0;
+    margin: 0;
+}
+
+.passions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-primary;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.passions>* {
+    position: relative;
+    z-index: 2;
+}
+
+.title {
+    text-align: left;
+    margin: 0;
+}
+
+
+.title h2 {
+    font-size: 6vh;
+    color: $color-text-white;
+    margin: 0;
+}
+
+.title h4 {
+    font-size: 3vh;
+    color: $color-text-black;
+    margin: 0;
+}
+
+
+
+
+.cards {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+.card {
+    border-radius: 18px;
+    width: 40vw;
+    height: 35vh;
+
+}
+
+
+
+.card h2 {
+    font-size: 6vh;
+    color: $color-text-white;
+    margin: 0;
+    z-index: 5;
+}
+
+.card p {
+    font-size: 2vh;
+    color: $color-text-white;
+    margin: 0;
+    z-index: 5;
+}
+
+
+.comunication_card {
+    padding: 4vh 4vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/comunication.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.comunication_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1),
+            rgba(64, 64, 64, 0.4));
+    z-index: 4;
+    border-radius: 18px;
+}
+
+.youtube_card {
+    padding: 4vh 4vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/youtube.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.youtube_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1),
+            rgba(64, 64, 64, 0.4));
+    z-index: 4;
+    border-radius: 18px;
+}
+
+.chess_card {
+    padding: 4vh 4vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/chess.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.chess_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1),
+            rgba(64, 64, 64, 0.4));
+    z-index: 4;
+    border-radius: 18px;
+}
+
+.investment_card {
+    padding: 4vh 4vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/investments.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    z-index: 3;
+}
+
+.investment_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 1),
+            rgba(64, 64, 64, 0.4));
+    z-index: 4;
+    border-radius: 18px;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: $mobile-width) {
+    .passions {
+        padding: 7vw 2vh;
+        height: 200vh;
+    }
+
+    .title h2 {
+        font-size: 4vh;
+
+    }
+
+    .title h4 {
+        font-size: 2.5vh;
+    }
+
+    .cards {
+        margin-top: 5vh;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .card {
+        border-radius: 18px;
+        height: 40vh;
+        width: 80vw;
+        margin-bottom: 3vh;
+    }
+
+    .card h2 {
+        font-size: 4vh;
+    }
+
+    .card p {
+        font-size: 1.8vh;
+    }
+
+
+    .comunication_card {
+        padding: 3vh 3vh;
+    }
+
+    .youtube_card {
+        padding: 3vh 3vh;
+    }
+
+    .chess_card {
+        padding: 3vh 3vh;
+    }
+
+    .investment_card {
+        padding: 3vh 3vh;
+    }
+
+
+}

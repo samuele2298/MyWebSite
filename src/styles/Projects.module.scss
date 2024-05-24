@@ -1,0 +1,353 @@
+@import 'constants';
+
+.projects {
+    position: relative;
+    padding: 7vh 5vw;
+    height: 100vh;
+    background-image: url('/image/projects_background.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    z-index: 0;
+    margin: 0;
+}
+
+.projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $color-black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.projects>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.title {
+    text-align: left;
+    margin: 0;
+}
+
+
+.title h2 {
+    font-size: 6vh;
+    color: $color-primary;
+    margin: 0;
+}
+
+.title h4 {
+    font-size: 3vh;
+    color: $color-text-white;
+    margin: 0;
+}
+
+
+
+.cards {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.card {
+    margin-right: 5vw;
+    width: 40vw;
+    height: 70vh;
+}
+
+
+.edooko_card {
+    position: relative;
+    padding: 5vh 5vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/edooko.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+
+    margin: 0;
+}
+
+.edooko_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+.card h1 {
+    position: relative;
+    font-size: 10vh;
+    color: $color-text-white;
+    margin: 0;
+    z-index: 6;
+    max-width: 80%;
+}
+
+.card h3 {
+    margin-top: 3vh;
+    position: relative;
+    font-size: 4vh;
+    color: $color-text-white;
+    margin: 0;
+    z-index: 6;
+    max-width: 80%;
+}
+
+.card p {
+    position: relative;
+    font-size: 2vh;
+    color: $color-text-white;
+    margin: 0;
+    z-index: 6;
+    max-width: 80%;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    z-index: 8;
+
+}
+
+.tag {
+    background-color: $color-black;
+    padding: 0.5vh 1vw;
+
+    border-radius: 18px;
+    margin-right: 1vw;
+    z-index: 9;
+    font-size: 2vh;
+}
+
+.tag h4 {
+    font-size: 2vh;
+    color: $color-text-white;
+    z-index: 10;
+    font-weight: bold;
+}
+
+
+
+
+.risiko_card {
+    position: relative;
+    padding: 5vh 5vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/risiko.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+
+    margin: 0;
+}
+
+.risiko_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+.website_card {
+    position: relative;
+    padding: 5vh 5vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/website.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+
+    margin: 0;
+}
+
+.website_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+.thesis_card {
+    position: relative;
+    padding: 5vh 5vh;
+    height: 100%;
+    width: 100%;
+    background-image: url('/image/thesis.jpg');
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+
+    margin: 0;
+}
+
+.thesis_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(145, 82, 249, 1),
+            rgba(20, 20, 20, 0.6));
+    z-index: 5;
+    border-radius: 18px;
+}
+
+
+
+.mobile_cards {
+    display: none;
+}
+
+@media screen and (max-width: $mobile-width) {
+    .projects {
+        padding: 7vw 2vh;
+        height: 310vh;
+        width: 100vw;
+    }
+
+
+
+    .title h2 {
+        font-size: 4vh;
+    }
+
+    .title h4 {
+        font-size: 2.5vh;
+    }
+
+
+    .cards {
+        display: none;
+    }
+
+    .mobile_cards {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 3vh;
+        width: 80vw;
+        height: 70vh;
+        justify-content: space-around;
+        align-items: normal;
+    }
+
+    .card h1 {
+        font-size: 7vh;
+    }
+
+    .card h3 {
+        font-size: 3vh;
+        margin: 0;
+    }
+
+    .card p {
+        font-size: 2vh;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tag {
+        padding: 0px 1vh;
+        border-radius: 14px;
+        margin-right: 2vw;
+        text-align: center;
+    }
+
+    .tag h4 {
+        font-size: 1.8vh;
+        font-weight: bold;
+    }
+
+
+    .edooko_card {
+        padding: 3vh 3vh;
+
+    }
+
+    .risiko_card {
+        padding: 3vh 3vh;
+
+    }
+
+    .thesis_card {
+        padding: 3vh 3vh;
+
+    }
+
+    .website_card {
+        padding: 3vh 3vh;
+
+    }
+
+
+
+
+}

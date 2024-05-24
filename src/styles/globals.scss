@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import 'constants';
+
+html,
+body {
+    background: linear-gradient(90deg,
+            $color-background-gradient-primary, $color-background-gradient-secondary);
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: $font;
+    height: 100vh;
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 0vh;
+}
